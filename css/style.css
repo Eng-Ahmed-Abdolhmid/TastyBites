@@ -1,0 +1,28 @@
+$primary-color: #ff7043;
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background-color: #fefefe;
+}
+
+.card {
+  transition: transform 0.3s ease;
+  &:hover {
+    transform: scale(1.03);
+  }
+  .btn-primary {
+    background-color: $primary-color;
+    border: none;
+    &:hover {
+      background-color: darken($primary-color, 10%);
+    }
+  }
+}
+// sass/style.scss
+.card {
+  transition: 0.3s ease-in-out;
+  &:hover {
+    transform: scale(1.03);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+}
